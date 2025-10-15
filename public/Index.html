@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="main"></title>
+    <link rel="stylesheet" href="styles/inicio.css">
+    <script src="js/translations/index.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div class="banner">
+        <h1 id="title"></h1>
+        <div class="banner-buttons">
+            <div class="dropdown">
+                <button class="dropdown-button" id="language"></button>
+                <div class="dropdown-content">
+                    <button class="banner-button" onclick="changeLanguage('en')">English</button>
+                    <button class="banner-button" onclick="changeLanguage('es')">Español</button>
+                </div>
+            </div>
+            <button class="banner-button" id="creditos"></button>
+            <button class="banner-button" id="go" onclick="calculate()"></button>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="results">
+            <h1 id="description"></h1>
+            <p id="parrafo" \></p>
+            <input id="input-number-1" type="number" min="0" max="255">.
+            <input id="input-number-2" type="number" min="0" max="255">.
+            <input id="input-number-3" type="number" min="0" max="255">.
+            <input id="input-number-4" type="number" min="0" max="255">/
+            <input id="prefix" type="number" min="0" max="32">
+            <button class="grid-button" onclick="calculate()" id="now"></button></span>
+            <!--Finaliza de agregar los números-->
+            
+            <h1 id="description2"></h1>
+            <h2 id="description3"></h2>
+            <p id="binarynumber"></p>
+            <p id="subnet"></p>
+            <p id="ip_red"></p>
+            <p id="broadcast"></p>
+            <p id="gateway"></p>
+            <p id="classs"></p>
+            <p id="type"></p>
+            <p id="hosts"></p>
+            <p id="listUtilIp"></p>
+            <p id="version"></p>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>

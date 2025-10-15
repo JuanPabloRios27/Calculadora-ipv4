@@ -1,0 +1,8 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/f3c72dfa-5cc1-4686-889c-aaa138171f24/resourceGroups/UIGreenMetricTeam1FinalProject_group/providers/Microsoft.Web/sites/UIGreenMetricTeam1FinalProject",
+    "appService.deploySubpath": ".",
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ]
+}

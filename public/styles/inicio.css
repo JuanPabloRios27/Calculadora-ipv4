@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+
+/* Estilo para el uso de la fuente Work Sans */
+span{
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    color: #0a0036;
+}
+h1{
+    font-family: "Work Sans", sans-serif;
+    font-size: 30px;
+    font-optical-sizing: auto;
+    text-align: center;
+    font-style: normal;
+}
+h2{
+    font-family: "Work Sans", sans-serif;
+    font-size: 25px;
+    font-optical-sizing: auto;
+    text-align: center;
+    font-style: normal;
+}
+h3{
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    color: #0a0036;
+    margin: 0;
+    background-color: #eefeff;
+}
+.results{
+    background-color: #eefeff;
+    width:50%;
+    margin: auto;
+}
+.subrayado-color-rojo {
+    text-decoration: underline;
+    background-color: red;
+}
+.subrayado-color-verde {
+    text-decoration: underline;
+    background-color: green;
+}
+/* Centrar elementos */
+.centrar{
+    display: block; /* Asegura que la imagen se trate como un bloque */
+    margin-right: auto;
+    margin-left: auto; /* Centra la imagen */
+    height: auto;
+}
+.centrar-texto{
+    text-align: center; /* Alineación centrada */
+}
+
+
+/* Banner */
+.banner {
+    position: fixed; /* Fijo al fondo superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(70, 154, 211, 0.9); /* Color translúcido */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Asegura que esté al frente */
+    box-sizing: border-box; /* Para incluir el padding en el ancho total */
+}
+
+/* Estilo para el menú desplegable (dropdown) */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Botón de lenguaje */
+.dropdown-button {
+    background-color: #1e80ff;
+    color: rgb(230, 245, 205);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.dropdown-button:hover {
+    background-color: hsl(239, 40%, 35%);
+    transform: scale(1.05);
+}
+
+/* Contenido del dropdown (opciones de idioma) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1d3ce9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Botones dentro del dropdown */
+.dropdown-content button {
+    background-color: #1e80ff;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px 0;
+    width: 100%;
+    text-align: left;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.dropdown-content button:hover {
+    background-color: hsl(249, 94%, 19%);
+    transform: scale(1.05);
+}
+
+/* Mostrar el contenido del dropdown cuando el mouse pasa por encima */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilo para el título principal */
+#title {
+    font-size: 27px;
+    font-weight: bold;
+    font-family: 'Work Sans', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    text-align: left; /* Alineación a la izquierda */
+}
+
+/* Estilo para los botones dentro del banner (no en dropdown) */
+.banner-buttons {
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-start; /* Alineación a la izquierda */
+    flex-wrap: wrap; /* Permite que los botones se ajusten si es necesario */
+}
+.input-numbers {
+   text-align: center;
+   margin: 0;
+}
+.input-number {
+   font-size: 27px;
+   font-family: 'Work Sans', sans-serif;
+   width: 3em;
+}
+.banner-button {
+    text-decoration: none;
+    color: rgb(189, 247, 255);
+    background-color: #012bb4;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.banner-button:hover {
+    background-color: hsl(236, 100%, 15%);
+    transform: scale(1.05);
+}
+
+/* Contenedor principal */
+.main-container {
+    margin-top: 80px; /* Deja espacio debajo del banner fijo */
+    min-height: calc(100vh - 80px); /* Ajuste responsivo */
+}
+/* Cuadrícula */
+.grid-container3x3 {
+    display: grid;
+    grid-template-columns: repeat(3, 420px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 2px solid #ccc;
+}
+.grid-container3x2{
+    display: grid;
+    grid-template-columns: repeat(3, 420px);
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 2px solid #ccc;
+}
+
+
+
+.grid-button {
+    text-decoration: none;
+    color: rgb(230, 245, 205);
+    background-color: #1b0938;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.grid-button:hover {
+    background-color: hsl(192, 76%, 64%);
+    transform: scale(1.05);
+}
