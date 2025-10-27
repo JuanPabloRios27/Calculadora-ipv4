@@ -7,6 +7,8 @@ let language = "";
 let alerta = "";
 let tipos = [];
 let host = 0;
+let background = "blue";
+
 let data = {
         mac_address: new Array(32).fill(false),
         integers_1: new Array(8).fill(0),
@@ -52,6 +54,11 @@ function listaIpUtiles(){
         x[0] = 255;
     }
     document.getElementById("listUtilIp").innerHTML += `[${data.gateway.join(".")}]-[${x.join(".")}]`;
+}
+function changeColor(color){
+    document.body.classList.remove(background);
+    document.body.classList.add(color);
+    background = color;
 }
 function hosts(){
     ceros = 32 - prefijo;
@@ -238,7 +245,7 @@ function paintBinary(){
         }else if(i == 26){
             result += '.';
         }else{
-            result += data.integers_3[i-27];
+            result += data.integers_4[i-26];
         }
         contador ++;
     }
@@ -257,7 +264,7 @@ function paintBinary(){
         }else if(i == 26){
             result += '.';
         }else{
-            result += data.integers_3[i-27];
+            result += data.integers_4[i-26];
         }
     }
     result += "</span>";
@@ -277,5 +284,9 @@ function verificar(){
     if(isNaN(prefijo) || isNaN(x_1) || isNaN(x_2) || isNaN(x_3) || isNaN(x_4)){
         alert(`${alerta}`);
     }
+    if(isNaN(prefijo) && isNaN(x_1) && isNaN(x_2) && isNaN(x_3) && isNaN(x_4)){
+        alert(`${alerta}`);
+    }
+    
 }
 

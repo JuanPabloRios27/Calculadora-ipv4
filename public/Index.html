@@ -21,7 +21,15 @@
                     <button class="banner-button" onclick="changeLanguage('es')">Español</button>
                 </div>
             </div>
-            <button class="banner-button" id="creditos"></button>
+            <div class="dropdown">
+                <button class="banner-button" id="color"></button>
+                <div class="dropdown-content">
+                    <button class="banner-button" id="red"onclick="changeColor('red')"></button>
+                    <button class="banner-button" id="blue"onclick="changeColor('blue')"></button>
+                     <button class="banner-button" id="green" onclick="changeColor('green')"></button>
+                </div>
+            </div>
+            <button class="banner-button" id="creditos" onclick="window.location.href = 'credits.html'"></button>
             <button class="banner-button" id="go" onclick="calculate()"></button>
         </div>
     </div>
@@ -29,14 +37,18 @@
         <div class="results">
             <h1 id="description"></h1>
             <p id="parrafo" \></p>
-            <input id="input-number-1" type="number" min="0" max="255">.
-            <input id="input-number-2" type="number" min="0" max="255">.
-            <input id="input-number-3" type="number" min="0" max="255">.
-            <input id="input-number-4" type="number" min="0" max="255">/
-            <input id="prefix" type="number" min="0" max="32">
-            <button class="grid-button" onclick="calculate()" id="now"></button></span>
+            <div class="input-numbers">
+
+                <p>
+                <input id="input-number-1" type="number" min="0" max="255" class="input-number">.
+                <input id="input-number-2" type="number" min="0" max="255"class="input-number">.
+                <input id="input-number-3" type="number" min="0" max="255"class="input-number">.
+                <input id="input-number-4" type="number" min="0" max="255"class="input-number">/
+                <input id="prefix" type="number" min="0" max="32"class="input-number">
+                <button class="grid-button" onclick="calculate()" id="now"></button></span>
+                </p>
+            </div>
             <!--Finaliza de agregar los números-->
-            
             <h1 id="description2"></h1>
             <h2 id="description3"></h2>
             <p id="binarynumber"></p>

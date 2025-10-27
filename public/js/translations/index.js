@@ -19,7 +19,11 @@ const translations = {
         type: "Type: ",
         host: "Amount of hosts: ",
         listUtilIp: "Address list index: ",
-        version: "version: 1.3"
+        version: "version: 1.3",
+        color: "Color",
+        red: "Red",
+        blue: "Blue",
+        green: "Green"
     },
     es: {
         main: "Calculadora de Protocolo Ipv4",
@@ -40,7 +44,11 @@ const translations = {
         type: "Tipo: ",
         host: "Cantidad de hosts: ",
         listUtilIp: "Rango de Ip's utiles: ",
-        version: "versión: 1.3"
+        version: "versión: 1.3",
+        color: "Color",
+        red: "Rojo",
+        blue: "Azul",
+        green: "Verde"
     }
 
 };
@@ -66,6 +74,10 @@ function changeLanguage(lang) {
     document.getElementById('hosts').textContent = translations[lang].host;
     document.getElementById('listUtilIp').textContent = translations[lang].listUtilIp;
     document.getElementById('version').textContent = translations[lang].version;
+    document.getElementById('color').textContent = translations[lang].color;
+    document.getElementById('red').textContent = translations[lang].red;
+    document.getElementById('green').textContent = translations[lang].green;
+    document.getElementById('blue').textContent = translations[lang].blue;
     document.documentElement.lang = lang; 
 }
 

@@ -1,10 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+.red h1 { color: #ff1e1e;} 
+.red p {color: #360000;} 
+.red .results {background-color:#ffeeee}
+.red .banner {background-color: #d3464db2}
+.red .banner-button {background-color: #b40101;}
+.red .banner-button:hover {background-color: #ff7e05;}
+.red .dropdown-button {background-color: #ff1e1e}
+.red .dropdown-button:hover {background-color: #7d3636}
+.red .dropdown-content {background-color: #e91d1d;}
+.red .grid-button {background-color: #380909}
+.red .grid-button:hover {background-color: #ed2020}
+body.red {background-image: url("Iconos/image1.gif");}
 
-/* Estilo para el uso de la fuente Work Sans */
-span{
-    font-family: "Work Sans", sans-serif;
-    font-size: 16px;
-    color: #0a0036;
+.green h1{ color: #35ff1e;} 
+.green p {color: #003607;} 
+.green .results {background-color:#efffee}
+.green .banner {background-color: #54d346b2}
+.green .dropdown-button:hover {background-color: #367d3c}
+.green .banner-button:hover {background-color: #4cff05;}
+.green .dropdown-button {background-color: #6dff1e; color: #eaffe3}
+.green .dropdown-content {background-color: #50e91d;}
+.green .dropdown-button:hover {background-color: hsl(109, 40%, 35%);}
+.green .banner-button {background-color: #01b410;}
+.green .grid-button {background-color: #103809}
+.green .grid-button:hover {background-color: #2aed20}
+body.green {background-image: url("Iconos/image3.gif");}
+
+.blue h1{ color: #1e80ff;} 
+.blue p {color: #0a0036;} 
+.blue .results {background-color:#eefeff}
+.blue .banner {background-color: #469bd3b5}
+.blue .dropdown-button:hover {background-color: #43367d}
+.blue .dropdown-button {background-color: #1e80ff; color: #e3fff9}
+.blue .dropdown-content {background-color: #1da8e9;}
+.blue .dropdown-content button {background-color: #1e53ff;}
+.blue .dropdown-button button:hover {background-color: hsl(256, 40%, 35%);}
+.blue .banner-button {background-color: #0146b4;}
+.blue .grid-button {background-color: #160938}
+.blue .grid-button:hover {background-color: #3120ed}
+body.blue {background-image: url("Iconos/image2.gif");}
+
+
+body{
+    margin: 0;
+    height: 100vh;
+    background-image: url("Iconos/image2.gif");
+    background-size: cover;              /* cubre toda la pantalla */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;        /* efecto parallax opcional */
+    color: white;
 }
 h1{
     font-family: "Work Sans", sans-serif;
@@ -12,35 +57,38 @@ h1{
     font-optical-sizing: auto;
     text-align: center;
     font-style: normal;
+    color:#1e80ff;
+    transition: color 0.4s ease;
 }
 h2{
     font-family: "Work Sans", sans-serif;
-    font-size: 25px;
+    font-size: 27px;
     font-optical-sizing: auto;
     text-align: center;
     font-style: normal;
+    color:#1e80ff;
+    transition: color 0.4s ease;
 }
-h3{
-    font-family: "Work Sans", sans-serif;
-    font-size: 20px;
-    font-optical-sizing: auto;
-    font-style: normal;
-}
+
 p {
     font-family: "Work Sans", sans-serif;
     font-size: 16px;
-    color: #0a0036;
+    color: #0A0036;
     margin: 0;
-    background-color: #eefeff;
+    transition: color 0.4s ease;
 }
 .results{
     background-color: #eefeff;
     width:80%;
     margin: auto;
+    transition: color 0.4s ease;
+    padding: 10px;
+    border-radius: 8px;
 }
 .subrayado-color-rojo {
     text-decoration: underline;
     background-color: red;
+    
 }
 .subrayado-color-verde {
     text-decoration: underline;
@@ -64,15 +112,16 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(70, 154, 211, 0.9); /* Color translúcido */
+    background-color: hsla(204, 62%, 55%, 0.902); /* Color translúcido */
     color: white;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(8, 0, 48, 0.1);
     z-index: 1000; /* Asegura que esté al frente */
     box-sizing: border-box; /* Para incluir el padding en el ancho total */
+    transition: background-color 0.4s ease;
 }
 
 /* Estilo para el menú desplegable (dropdown) */
@@ -84,7 +133,7 @@ p {
 /* Botón de lenguaje */
 .dropdown-button {
     background-color: #1e80ff;
-    color: rgb(230, 245, 205);
+    color: #e3fff9;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 14px;
@@ -93,11 +142,11 @@ p {
 }
 
 .dropdown-button:hover {
-    background-color: hsl(239, 40%, 35%);
+    background-color: #36377d;
     transform: scale(1.05);
 }
 
-/* Contenido del dropdown (opciones de idioma) */
+/* Contenido del dropdown */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -150,6 +199,8 @@ p {
 .input-numbers {
    text-align: center;
    margin: 0;
+   color: rgb(10, 10, 10);
+   font-size: 70px;
 }
 .input-number {
    font-size: 27px;
@@ -168,7 +219,7 @@ p {
 }
 
 .banner-button:hover {
-    background-color: hsl(236, 100%, 15%);
+    background-color: #00054d;
     transform: scale(1.05);
 }
 
@@ -210,6 +261,8 @@ p {
     transition: background-color 0.3s, transform 0.2s;
 }
 .grid-button:hover {
-    background-color: hsl(192, 76%, 64%);
+    background-color: #5dcde9;
     transform: scale(1.05);
 }
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="main"></title>
+    <link rel="stylesheet" href="styles/inicio.css">
+    <script src="js/translations/credits.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div class="banner">
+        <h1 id="title"></h1>
+        <div class="banner-buttons">
+            <div class="dropdown">
+                <button class="dropdown-button" id="language"></button>
+                <div class="dropdown-content">
+                    <button class="banner-button" onclick="changeLanguage('en')">English</button>
+                    <button class="banner-button" onclick="changeLanguage('es')">Español</button>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="banner-button" id="color"></button>
+                <div class="dropdown-content">
+                    <button class="banner-button" id="red"onclick="changeColor('red')"></button>
+                    <button class="banner-button" id="blue"onclick="changeColor('blue')"></button>
+                     <button class="banner-button" id="green" onclick="changeColor('green')"></button>
+                </div>
+            </div>
+            <button class="banner-button" id="calculadora" onclick="window.location.href = 'index.html'"></button>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="results">
+            <h1 id="h1"></h1>
+            <p id="p1"></p>
+            <h2 id="h2"></h2>
+            <p id="p2"></p>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>
