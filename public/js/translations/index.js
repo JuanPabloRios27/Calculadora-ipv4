@@ -8,6 +8,7 @@ const translations = {
         title: "Ipv4 Protocol Internet Calculator.",
         description: "Calculate online.",
         parrafo: "Calculate this ipv addresss for me.....",
+        parrafo2: "with this subnet mask",
         now: "now",
         description2: "Results",
         binarynumber: "Binary Representation: ",
@@ -19,7 +20,7 @@ const translations = {
         type: "Type: ",
         host: "Amount of hosts: ",
         listUtilIp: "Address list index: ",
-        version: "version: 1.3",
+        version: "version: 2.7",
         color: "Color",
         red: "Red",
         blue: "Blue",
@@ -33,6 +34,7 @@ const translations = {
         title: "Calculadora de Protocolo Ipv4.",
         description: "Calcula en línea.",
         parrafo: "Calcula esta dirección ip.....",
+        parrafo2: "Con esta mascara de subred.",
         now: "ahora",
         description2: "Resultados",
         binarynumber: "Representación Binaria: ",
@@ -44,7 +46,7 @@ const translations = {
         type: "Tipo: ",
         host: "Cantidad de hosts: ",
         listUtilIp: "Rango de Ip's utiles: ",
-        version: "versión: 1.3",
+        version: "versión: 2.7",
         color: "Color",
         red: "Rojo",
         blue: "Azul",
@@ -62,6 +64,7 @@ function changeLanguage(lang) {
     document.getElementById('go').textContent = translations[lang].go;
     document.getElementById('description').textContent = translations[lang].description;
     document.getElementById('parrafo').textContent = translations[lang].parrafo;
+    document.getElementById('parrafo2').textContent = translations[lang].parrafo2;
     document.getElementById('now').textContent = translations[lang].now;
     document.getElementById('description2').textContent = translations[lang].description2;
     document.getElementById('binarynumber').textContent = translations[lang].binarynumber;
