@@ -211,7 +211,6 @@ function calculateBinary(){
     x_2 = parseInt(document.getElementById("input-number-2").value)
     x_3 = parseInt(document.getElementById("input-number-3").value);
     x_4 = parseInt(document.getElementById("input-number-4").value);
-    prefijo = parseInt(document.getElementById("prefix").value);
     for(let i = 7; i >= 0; i--){
         let bit_1 = x_1 % 2;
         let bit_2 = x_2 % 2;
@@ -281,12 +280,40 @@ function idioma(){
     }
 }
 function verificar(){
-    if(isNaN(prefijo) || isNaN(x_1) || isNaN(x_2) || isNaN(x_3) || isNaN(x_4)){
+    if( isNaN(x_1) || isNaN(x_2) || isNaN(x_3) || isNaN(x_4)){
         alert(`${alerta}`);
     }
-    if(isNaN(prefijo) && isNaN(x_1) && isNaN(x_2) && isNaN(x_3) && isNaN(x_4)){
+    if( isNaN(x_1) && isNaN(x_2) && isNaN(x_3) && isNaN(x_4)){
         alert(`${alerta}`);
     }
-    
+    y_1 = parseInt(document.getElementById("input-numberm-1").value);
+    y_2 = parseInt(document.getElementById("input-numberm-2").value);
+    y_3 = parseInt(document.getElementById("input-numberm-3").value);
+    y_4 = parseInt(document.getElementById("input-numberm-4").value);
+    for(let i = 9; i >= 0; i--){
+        let bit_1 = y_1 % 2;
+        let bit_2 = y_2 % 2;
+        let bit_3 = y_3 % 2;
+        let bit_4 = y_4 % 2;
+        data.integers_1[i] = bit_1;
+        data.integers_2[i] = bit_2;
+        data.integers_3[i] = bit_3;
+        data.integers_4[i] = bit_4;
+    }
+    console.log(data.integers_4);
+    prefijo = 0
+    for (let i =0; i < 8; i++){
+        prefijo += data.integers_1[i];
+    } 
+    for (let i =0; i < 8; i++){
+        prefijo += data.integers_2[i];
+    } 
+    for (let i =0; i < 8; i++){
+        prefijo += data.integers_3[i];
+    } 
+    for (let i =0; i < 8; i++){
+        prefijo += data.integers_4[i];
+    } 
+    console.log(prefijo);
 }
 
