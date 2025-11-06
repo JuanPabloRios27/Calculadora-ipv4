@@ -290,7 +290,7 @@ function verificar(){
     y_2 = parseInt(document.getElementById("input-numberm-2").value);
     y_3 = parseInt(document.getElementById("input-numberm-3").value);
     y_4 = parseInt(document.getElementById("input-numberm-4").value);
-    for(let i = 9; i >= 0; i--){
+    for(let i = 7; i >= 0; i--){
         let bit_1 = y_1 % 2;
         let bit_2 = y_2 % 2;
         let bit_3 = y_3 % 2;
@@ -299,8 +299,16 @@ function verificar(){
         data.integers_2[i] = bit_2;
         data.integers_3[i] = bit_3;
         data.integers_4[i] = bit_4;
+        y_1 = Math.floor(y_1 / 2);
+        y_2 = Math.floor(y_2 / 2);
+        y_3 = Math.floor(y_3 / 2);
+        y_4 = Math.floor(y_4 / 2);
+
     }
-    console.log(data.integers_4);
+    console.log("Datos del 1: "+data.integers_1);
+    console.log("Datos del 2: "+data.integers_2);
+    console.log("Datos del 3: "+data.integers_3);
+    console.log("Datos del 4: "+data.integers_4);
     prefijo = 0
     for (let i =0; i < 8; i++){
         prefijo += data.integers_1[i];
